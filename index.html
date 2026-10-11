@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>30-Day Prayer & Fasting Guide</title>
+<meta name='theme-color' content='#a8457f'>
+<link rel='manifest' href='manifest.webmanifest'>
+<link rel='apple-touch-icon' href='icon-192.png'>
+<style>
+:root{--bg:#faf6ee;--card:#fff;--ink:#2b2418;--mut:#7a6f5d;--gold:#b8860b;--acc:#5b3a8c;--line:#e8dfcc;--ok:#2e7d4f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17131f;--card:#221c2e;--ink:#f1ead9;--mut:#a79c88;--gold:#e0b341;--acc:#b79af0;--line:#352c47;--ok:#6fcf97}}
+:root[data-theme="dark"]{--bg:#17131f;--card:#221c2e;--ink:#f1ead9;--mut:#a79c88;--gold:#e0b341;--acc:#b79af0;--line:#352c47;--ok:#6fcf97}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Georgia,"Times New Roman",serif}
+.w{max-width:760px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.7rem;margin:.2em 0;color:var(--acc)}h2{font-size:1.15rem;margin:0 0 .4em;color:var(--acc)}
+.sub{color:var(--mut);font-style:italic;margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--ok));width:0;transition:width .3s}
+.stats{display:flex;justify-content:space-between;font-size:.9rem;color:var(--mut);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:6px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 0;font:inherit;cursor:pointer}
+.chip.done{background:var(--ok);color:#fff;border-color:var(--ok)}.chip.sel{outline:2px solid var(--gold)}
+.phase{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:0}
+.ref{background:var(--bg);border-left:4px solid var(--gold);padding:8px 12px;border-radius:6px;margin:10px 0}
+.pr{font-style:italic}
+a.s{display:inline-block;margin:4px 6px 0 0;padding:7px 12px;border-radius:20px;border:1px solid var(--acc);color:var(--acc);text-decoration:none;font-size:.9rem;font-family:system-ui,sans-serif}
+label.t{display:flex;gap:8px;align-items:center;margin:6px 0;font-family:system-ui,sans-serif;font-size:.95rem}
+textarea{width:100%;min-height:80px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);padding:8px;font:inherit}
+.nav{display:flex;justify-content:space-between;margin-top:12px}
+button.b{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:9px 16px;font:inherit;cursor:pointer}
+button.b.g{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+details{margin:8px 0}summary{cursor:pointer;font-weight:bold}
+small{color:var(--mut)}
+ul{padding-left:20px;margin:.4em 0}
+:root{--bg:#fff6f4;--card:#fff;--ink:#4a2c3a;--mut:#9b7787;--gold:#c4807d;--acc:#a8457f;--line:#f4d9de;--ok:#5fae8a}
+@media (prefers-color-scheme:dark){:root:not([data-theme='light']){--bg:#2a1a24;--card:#38242f;--ink:#fde9f0;--mut:#d3adbc;--gold:#efb3a8;--acc:#f2a7cc;--line:#52364a;--ok:#8fd3b0}}
+:root[data-theme='dark']{--bg:#2a1a24;--card:#38242f;--ink:#fde9f0;--mut:#d3adbc;--gold:#efb3a8;--acc:#f2a7cc;--line:#52364a;--ok:#8fd3b0}
+body{font-family:Nunito,'Segoe UI',system-ui,sans-serif;background:var(--bg)}
+h1,h2{font-family:'Playfair Display',Georgia,serif}
+.card{border-radius:22px;box-shadow:0 8px 24px rgba(168,69,127,.09)}
+.chip{border-radius:50%;aspect-ratio:1/1;padding:0;font-family:inherit}
+.bar{height:12px}
+button.b{border-radius:999px;background:linear-gradient(135deg,var(--acc),var(--gold))}
+button.b.g{background:transparent}
+a.s{background:rgba(242,167,204,.14)}
+.ref{border-radius:12px;font-style:italic}
+.hero{position:relative;overflow:hidden;border-radius:26px;padding:46px 16px 40px;margin-bottom:14px;text-align:center;box-shadow:0 10px 28px rgba(168,69,127,.18)}
+.hero svg{position:absolute;inset:0;width:100%;height:100%}
+.hero .ht{position:relative;color:#4a2c3a}
+.hero h1{font-size:2rem;color:#8a3b66;margin:.1em 0}
+.hero .sub{color:#7a4f64}
+.hero .phase{color:#a8457f}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 4px;font-size:.85rem}
+.steps b{display:block;color:var(--acc)}.steps span{color:var(--mut);font-size:.78rem}
+.pb{display:flex;gap:12px;align-items:center;border-radius:16px;padding:12px 14px;margin-bottom:12px;color:#4a2c3a}
+.pb .ic{font-size:2rem}.pb .phase{color:#8a3b66;font-weight:bold}.pb small{color:#6b4256}
+@media (max-width:480px){.steps{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="hero"><svg viewBox='0 0 400 160' preserveAspectRatio='xMidYMid slice' aria-hidden='true'><defs><linearGradient id='hg' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fde4ea'/><stop offset='1' stop-color='#e8c9f0'/></linearGradient><g id='fl'><g fill='#f4a6c0'><circle cy='-9' r='6'/><circle cy='-9' r='6' transform='rotate(72)'/><circle cy='-9' r='6' transform='rotate(144)'/><circle cy='-9' r='6' transform='rotate(216)'/><circle cy='-9' r='6' transform='rotate(288)'/></g><circle r='4.5' fill='#f7d38a'/></g></defs><rect width='400' height='160' fill='url(#hg)'/><circle cx='318' cy='46' r='32' fill='#fff5d6' opacity='.9'/><path d='M0 160V132Q100 112 200 134T400 126V160Z' fill='#fbd0dc'/><ellipse cx='72' cy='146' rx='18' ry='5' fill='#a9d6b5' transform='rotate(-20 72 146)'/><ellipse cx='352' cy='146' rx='18' ry='5' fill='#a9d6b5' transform='rotate(20 352 146)'/><use href='#fl' transform='translate(36 134) scale(1.5)'/><use href='#fl' transform='translate(90 148) scale(1)'/><use href='#fl' transform='translate(330 136) scale(1.4)'/><use href='#fl' transform='translate(378 148) scale(1)'/><use href='#fl' transform='translate(60 30) scale(.8)'/><g transform='translate(300 56)'><path d='M-22 2 l-16 8 18 -2z' fill='#fff' stroke='#ecd0da'/><ellipse rx='24' ry='11' fill='#fff' stroke='#ecd0da'/><path d='M-6 -4 Q-30 -34 -4 -26 Q14 -20 10 -4Z' fill='#fff' stroke='#ecd0da'/><circle cx='22' cy='-8' r='7' fill='#fff' stroke='#ecd0da'/><path d='M28 -9 l8 3 -8 2z' fill='#f2b27a'/></g></svg><div class="ht"><p class="phase">30 Days with God</p><h1>Prayer &amp; Fasting Guide</h1><p class="sub">Thanksgiving, the Holy Spirit, freedom, protection, destiny helpers, marriage and a good job.</p></div></div>
+<div class="steps" style="margin-bottom:14px"><div><b>📖 Read</b><span>Scripture of the day</span></div><div><b>🙏 Pray</b><span>5 prayer points</span></div><div><b>🎶 Worship</b><span>Songs and sermons</span></div><div><b>🕯️ Fast</b><span>Choose your level</span></div></div>
+
+<div class="card">
+<div class="bar"><i id="pb"></i></div>
+<div class="stats"><span id="pt">0 of 30 days completed</span><span id="st"></span></div>
+</div>
+
+<p class="sub" style="text-align:center;margin:0 0 10px"><small>Your progress and notes are saved on this device.</small></p>
+<div class="card"><div class="grid" id="grid"></div></div>
+
+
+<div class="card" id="day"></div>
+
+<div class="card">
+<h2>How to use this guide</h2>
+<details open><summary>Daily pattern (30-60 minutes)</summary>
+<ul>
+<li><b>Thank</b> God first: favor, protection, life.</li>
+<li><b>Read</b> the passages slowly, aloud if you can.</li>
+<li><b>Pray</b> the day's prayer, then pray in your own words.</li>
+<li><b>Worship</b> with a song, then <b>be still</b> for 5 minutes to listen.</li>
+<li><b>Write</b> what God shows you, including your dreams.</li>
+</ul></details>
+<details><summary>Fasting options (choose what suits your health)</summary>
+<ul>
+<li><b>Level 1:</b> Partial fast, no food from 6am to 12pm or 3pm, then a simple meal.</li>
+<li><b>Level 2:</b> Daniel fast: vegetables, fruit, water; no meat, sweets or snacks.</li>
+<li><b>Level 3:</b> Full-day water fast on selected days only (for example Wednesdays and Fridays).</li>
+<li><b>Fasting beyond food:</b> social media, entertainment, anything feeding temptation.</li>
+</ul>
+<small>If you are unwell, pregnant, diabetic, or on medication, speak with your doctor first. God honors a sincere heart, so you can fast from media instead of food.</small></details>
+<details><summary>Keeping your freedom (practical)</summary>
+<ul>
+<li>Remove or block what feeds sexual temptation: certain apps, sites, chats, late-night scrolling.</li>
+<li>Do not fight alone: tell one mature believer or pastor who will pray with you (James 5:16).</li>
+<li>Before sleep: pray Psalm 91, thank God, and keep your phone away from your bed.</li>
+<li>Recurring distressing dreams can also be linked to stress and poor sleep, so rest, eat well and seek counsel if they continue.</li>
+</ul></details>
+<details><summary>Final declaration of faith</summary>
+<p class="pr">I declare that I am a child of God, redeemed by the blood of Jesus. Every curse is broken. Every altar is destroyed. Every evil dream is canceled. Sexual sin has no power over me. The Holy Spirit fills me and leads me. I walk in divine health, favor and protection. My destiny is secure in Christ, and I will fulfil every purpose God has for me. In Jesus' mighty name. Amen.</p>
+<small>Philippians 1:6: He who began a good work in you will carry it on to completion until the day of Christ Jesus.</small></details>
+<details><summary>Quick-access prayer points</summary>
+<p><b>Against sexual sin</b></p><ul><li>I break every addiction to pornography, masturbation and lustful thoughts.</li><li>I renounce every sexual relationship outside of marriage.</li><li>Every spirit of lust, I command you to leave me now.</li><li>I am dead to sin and alive to righteousness (Romans 6:11).</li></ul>
+<p><b>Against evil dreams</b></p><ul><li>Every dream of being chased, I cancel you now.</li><li>Every dream of sexual defilement, I cancel you now.</li><li>My dreams are from God: dreams of peace, direction and victory.</li></ul>
+<p><b>For destiny helpers</b></p><ul><li>Father, connect me to the right people at the right time.</li><li>I break every relationship that delays my destiny.</li><li>I declare divine connections and godly mentors in my life.</li></ul>
+<p><b>For protection</b></p><ul><li>I cover myself and my family with the blood of Jesus.</li><li>We dwell in the secret place of the Most High (Psalm 91).</li><li>No evil shall befall us, no plague shall come near our dwelling.</li></ul></details>
+<details><summary>Closing prayer for each day</summary>
+<p class="pr">"In the name of Jesus, I thank You, Lord. I receive Your Holy Spirit, Your peace and Your protection over me and my family. Amen."</p></details>
+<p><button class="b g" id="reset">Reset progress</button> <button class="b g" id="theme">Light / dark</button></p>
+</div>
+</div>
+
+<script>
+var D=[
+["Thanksgiving & Praise","Psalm 100; Psalm 103","Father, thank You for Your favor, protection and mercies new every morning. I enter Your gates with thanksgiving and praise.","Goodness of God","Mathias Mhere"],
+["Repentance & a Clean Heart","Psalm 51; Luke 15:11-24","Lord, I confess my sins and turn from them. Create in me a clean heart and renew a right spirit within me.","Create in Me a Clean Heart","Janet Manyowa"],
+["Freedom from Sexual Sin","1 Corinthians 6:12-20; Proverbs 4:23-27","Lord, my body is Your temple. I renounce every sexual sin, secret and ungodly soul tie. Give me strength to flee, and make me whole.","Break Every Chain","Charles Charamba"],
+["Drawing Near to God","James 4:7-10; Psalm 63","I submit to You, God. I resist the devil and he flees. I draw near, and You draw near to me. I want more of You.","Draw Me Close","Michael Mahendere"],
+["Forgiveness & a Fresh Start","1 John 1:5-9; Romans 8:1; Isaiah 43:18-19","I receive Your forgiveness and refuse condemnation. Do a new thing in my life, and let me walk in newness.","Reckless Love","Prudence Katomeni"],
+["Hunger for the Holy Spirit","Luke 11:9-13; John 7:37-39","Father, I ask, I seek, I knock. Fill me afresh with Your Holy Spirit. I am thirsty for You.","Holy Spirit (Bryan and Katie Torwalt)","Progress Chipfumo"],
+["The Promise of the Spirit","Acts 1:1-8; Acts 2:1-21; John 14:15-27","Lord Jesus, You promised the Comforter. I receive the gift of the Holy Spirit with power to live for You.","Spirit of the Living God","Janet Manyowa"],
+["Led by the Spirit","Romans 8:1-17; Galatians 5:16-25","Holy Spirit, lead me. Help me walk in the Spirit so I do not fulfil the desires of the flesh.","Spirit Lead Me","Mathias Mhere"],
+["Power & Boldness","Acts 4:23-31; 2 Timothy 1:6-7","You have not given me a spirit of fear but of power, love and a sound mind. Fill me with boldness.","Rain Down","Charles Charamba"],
+["Fruit & Gifts of the Spirit","Galatians 5:22-23; 1 Corinthians 12:1-11","Grow Your fruit in me: love, joy, peace, patience, self-control. Stir up Your gifts in my life.","Holy Spirit You Are Welcome Here","Prudence Katomeni"],
+["Breaking Ungodly Altars","Judges 6:25-32; Exodus 34:12-14","Lord, I break and renounce every altar raised against my life or family, and I set up the altar of Your presence in my home and heart.","Altar","Michael Mahendere"],
+["Redeemed from Every Curse","Galatians 3:13-14; Ezekiel 18:30-32","Christ has redeemed me. Every negative pattern in my family line ends with me, in Jesus' name.","No Longer Slaves","Progress Chipfumo"],
+["Authority in Christ","Colossians 2:13-15; Luke 10:17-20","Christ disarmed every power against me at the cross. I stand in His authority and victory.","Victory Belongs to Jesus","Charles Charamba"],
+["Weapons of Warfare","2 Corinthians 10:3-5; Ephesians 6:10-18","I put on the full armor of God. I take every thought captive to the obedience of Christ.","Great Are You Lord","Mathias Mhere"],
+["Chains Broken, Walking Free","Isaiah 61:1-3; Luke 4:18-19; Psalm 107:10-16","You bring prisoners out of darkness and break their chains. I declare that I am free, in Jesus' name.","Chains Are Broken (Sinach)","Janet Manyowa"],
+["Peaceful Sleep","Psalm 4:8; Proverbs 3:21-26; Psalm 127:1-2","Lord, You give Your beloved sleep. I lie down in peace and I will not be afraid.","Peace Be Still","Michael Mahendere"],
+["Guarding Eyes, Ears & Mind","Philippians 4:8; Psalm 101:2-4; Job 31:1","I set nothing impure before my eyes. Fill my mind with what is true, pure and lovely. I cancel every impure dream in Jesus' name.","Create in Me a Clean Heart","Prudence Katomeni"],
+["No More Nightmares or Chasing","Psalm 91; Isaiah 54:14-17","I dwell in the shelter of the Most High. No weapon formed against me will prosper. Every dream of being chased is cancelled.","He Is Able","Progress Chipfumo"],
+["Dreams from God","Job 33:14-18; Joel 2:28; Daniel 2:19-23","Lord, speak to me by Your Spirit. Let my dreams and visions come only from You.","Hear Our Prayer O Lord","Charles Charamba"],
+["Health & Healing","Exodus 15:26; Psalm 103:1-5; Isaiah 53:4-5; 3 John 1:2","Lord, You are my healer. I receive strength, wholeness and good health in body, mind and spirit.","Jehovah Rapha","Mathias Mhere"],
+["Protection for My Family","Psalm 121; Job 1:9-10; Joshua 24:15","Father, put a hedge of protection around my family. As for me and my house, we will serve the Lord.","Safe in His Arms","Janet Manyowa"],
+["A Good Job & Provision","Deuteronomy 8:17-18; Proverbs 10:22; Psalm 90:17","Lord, give me work that honors You and pays well. Establish the work of my hands and open doors no one can shut.","Jireh","Michael Mahendere"],
+["Favor at Work","Genesis 39:2-6, 21-23; Psalm 5:12; Proverbs 22:29","Surround me with favor like a shield. Make me excellent and trustworthy, and let me stand before kings.","Favor","Progress Chipfumo"],
+["Destiny Helpers","Ruth 2:1-12; Esther 2:15-17","Lord, connect me with the right people at the right time: helpers, mentors and doors of favor for my destiny.","Way Maker","Prudence Katomeni"],
+["Divine Connections","Acts 9:26-28; Proverbs 18:16; Genesis 41:9-16","Let my gifts make room for me. Send me my Barnabas, and keep every wrong connection far from me.","God Will Make a Way","Charles Charamba"],
+["Preparing for Marriage","Genesis 2:18-24; Proverbs 18:22; Psalm 37:4-5","Father, prepare me to be a good spouse. In Your time, bring me the one You have for me and prepare their heart.","Yes I Will","Mathias Mhere"],
+["A Godly Spouse","Ruth 3:1-13; Ruth 4:13; 2 Corinthians 6:14","Lord, give me a godly spouse who loves You. Close every wrong door and open the right one. Let our home be built on You.","Promises","Janet Manyowa"],
+["Purpose & Destiny","Jeremiah 29:11-13; Psalm 139:13-16; Ephesians 2:10","You have plans for my future and a hope. Lord, reveal and fulfil Your purpose for my life.","Who You Say I Am","Michael Mahendere"],
+["Walking in Purity & Victory","Romans 6:11-14; 1 Thessalonians 4:3-8; 2 Timothy 2:22","Sin no longer has dominion over me. I flee youthful lusts and pursue righteousness, faith, love and peace.","Nothing But the Blood","Progress Chipfumo"],
+["Thanksgiving & Sealing","Psalm 136; Ephesians 3:20-21; Philippians 4:6-7","Thank You, Lord, for Your favor and protection. You are able to do immeasurably more than I ask. I seal these prayers in Jesus' name. Amen.","Thank You Lord","Prudence Katomeni"]
+];
+var phases=[[0,4,"Phase 1: Thanksgiving, Repentance & Drawing Near"],[5,9,"Phase 2: The Holy Spirit"],[10,14,"Phase 3: Breaking Altars & Chains"],[15,18,"Phase 4: Dreams & Peaceful Sleep"],[19,20,"Phase 5: Health & Family"],[21,22,"Phase 6: Job & Provision"],[23,24,"Phase 7: Destiny Helpers"],[25,26,"Phase 8: Marriage"],[27,29,"Phase 9: Purpose, Purity & Thanksgiving"]];
+var SM=["Charles Stanley thanksgiving sermon","Paul Washer repentance sermon","Paul Washer sexual purity","Charles Stanley intimacy with God","Joseph Prince no condemnation","Benny Hinn Holy Spirit sermon","Apostle Joshua Selman Holy Spirit","Apostle Joshua Selman led by the Spirit","Makandiwa Holy Spirit power","Derek Prince gifts of the Holy Spirit","Dr DK Olukoya breaking evil altars","Derek Prince breaking curses","Apostle Joshua Selman authority of the believer","Tony Evans spiritual warfare armor of God","Derek Prince deliverance","Psalm 91 sermon protection and peace","Matt Chandler guarding your heart sexual sin","Dr DK Olukoya dreams sermon","dreams and visions sermon Holy Spirit","Joseph Prince healing sermon","Tony Evans family protection sermon","Mensa Otabil work and provision","TD Jakes favor sermon","Apostle Joshua Selman destiny helpers","Mensa Otabil divine connections","Tony Evans singles marriage sermon","Tim Keller marriage sermon","Myles Munroe purpose and destiny","Joseph Prince victory over sin","Charles Stanley gratitude sermon"];
+var ES=[["Goodness of God","CeCe Winans"],["Create in Me a Clean Heart","Keith Green"],["Break Every Chain","Tasha Cobbs Leonard"],["Draw Me Close","Michael W. Smith"],["Reckless Love","Cory Asbury"],["Holy Spirit","Bryan and Katie Torwalt"],["Spirit Break Out","Kim Walker-Smith"],["Spirit Lead Me","Michael Ketterer"],["Raise a Hallelujah","Bethel Music"],["Holy Spirit","Francesca Battistelli"],["Build My Life","Pat Barrett"],["No Longer Slaves","Jonathan and Melissa Helser"],["Victory Belongs to Jesus","Todd Dulaney"],["Great Are You Lord","All Sons and Daughters"],["Chain Breaker","Zach Williams"],["Peace Be Still","Lauren Daigle"],["Clean","Natalie Grant"],["Fear Is a Liar","Zach Williams"],["Oceans","Hillsong United"],["Healer","Kari Jobe"],["Never Once","Matt Redman"],["Jireh","Elevation Worship and Maverick City"],["Promises","Maverick City Music"],["Way Maker","Sinach"],["God Will Make a Way","Don Moen"],["Yes I Will","Vertical Worship"],["Trust in You","Lauren Daigle"],["Who You Say I Am","Hillsong Worship"],["Overcomer","Mandisa"],["Thank You Lord","Don Moen"]];
+var EN2=["Draw Me Close to You|Michael W. Smith;Create In Me a Clean Heart|Keith Green","Holy Spirit|Francesca Battistelli;Spirit of the Living God|Audrey Assad","Clean|Natalie Grant","Closer|Bethel Music;Breathe|Michael W. Smith","Word of God Speak|MercyMe;Thy Word|Amy Grant","Thank You Lord|Don Moen","What A Beautiful Name|Hillsong Worship;Great Are You Lord|All Sons and Daughters","The Battle Belongs to the Lord|Petra;Surrounded Fight My Battles|UPPERROOM","No Longer Slaves|Bethel Music;Whom Shall I Fear|Chris Tomlin","Way Maker|Sinach","Chain Breaker|Zach Williams;Living Hope|Phil Wickham","Reckless Love|Cory Asbury;Stand In Your Love|Bethel Music","It Is Well|Bethel Music","Victory Belongs to Jesus|Todd Dulaney;Raise a Hallelujah|Bethel Music","Open the Eyes of My Heart|Paul Baloche;Do It Again|Elevation Worship","Blessings|Laura Story;Jehovah Jireh|Elevation Worship","Love Never Fails|Brandon Heath","Provider|Elevation Worship;Great Things|Phil Wickham","Here I Am Lord|Dan Schutte","Open Doors|Elevation Worship;See a Victory|Elevation Worship","While I Wait|Lincoln Brewster;Yet Not I But Through Christ In Me|CityAlight","Healing Is Here|Deluge","You Are My Hiding Place|Selah;Firm Foundation|Cody Carnes","10000 Reasons|Matt Redman;How Great Is Our God|Chris Tomlin","Rest on Us|Maverick City Music","Build My Life|Pat Barrett","The Lion and the Lamb|Big Daddy Weave","Fresh Wind|Hillsong Worship","The Blessing|Kari Jobe and Cody Carnes","How Great Thou Art|hymn;To God Be the Glory|hymn"];
+var SN=["Ndinzwireiwo Tsitsi|Michael Mahendere;Mwari Ndiponesei|Fungisai Zvakavapano","Mweya Mutsvene|Janet Manyowa;Uyai Mweya|Sabastian Magacha","Ndinunurei|Michael Mahendere;Simuka|Joyful Praise","Ndipeiwo Nguva|Mathias Mhere;Jesu Ndiye Shamwari|Bethen Pasinawako","Shoko Renyu|Charles Charamba;Baba Vangu|Worship Addicts","Makanaka Jesu|Fungisai Zvakavapano;Ndatenda|Janet Manyowa","Zita Renyu|Michael Mahendere;Jehovah Muponesi|Bethen Pasinawako","Hondo Yangu|Charles Charamba;Mwari Murwiri Wangu|Mathias Mhere","Tinokunda|Mathias Mhere;Hapana Angandikunda|Sabastian Magacha","Jehovah Mufudzi|Fungisai Zvakavapano","Ndakasununguka|Janet Manyowa;Makomborero|Bethen Pasinawako","Tsvaka Mwari|Michael Mahendere;Ndimi Ishe|Worship Addicts","Runyararo|Fungisai Zvakavapano;Mwari Vakanaka|Charles Charamba","Kukunda Kwacho|Michael Mahendere","Ndimi Mwari|Sabastian Magacha","Mwari Vanondichengeta|Janet Manyowa;Ndiye Mwari|Charles Charamba","Rudo Rwako|Fungisai Zvakavapano;Wandibata Moyo|Mathias Mhere","Jehova Ndiye Mufudzi|Bethen Pasinawako;Maropafadzo|Janet Manyowa","Nzira Yako|Michael Mahendere;Fambai Neni|Sabastian Magacha","Zarurira Mikova|Charles Charamba;Mwari Ndivhurireiwo|Mathias Mhere","Ndimirire|Janet Manyowa;Handina Nguva|Fungisai Zvakavapano","Muporofita|Charles Charamba;Ndirapei Mwari|Sabastian Magacha","Chengetai Mhuri Yangu|Bethen Pasinawako;Mwari Ndimi|Worship Addicts","Mwari Wakanaka|Fungisai Zvakavapano;Ndinokutendai|Michael Mahendere","Runyararo Rwako|Janet Manyowa;Zorora MunaJesu|Bethen Pasinawako","Vana Vangu|Charles Charamba;Mwari Chengetai Vana|Mathias Mhere","Ndakakunda|Sabastian Magacha;Ndisimbise|Michael Mahendere","Mweya Mutsvene Uyai|Fungisai Zvakavapano;Uyai Mweya Mutsvene|Janet Manyowa","Ndazviisa Kwamuri|Bethen Pasinawako;Zvaitwa Ishe|Michael Mahendere","Mwari Makanaka|Charles Charamba;Ndatenda Mwari|Fungisai Zvakavapano"];
+var FA=["6am-12pm, water only","6am-3pm","6am-3pm","6am-6pm","6am-6pm","6am-12pm","6am-12pm, light fast (rest day)","6am-6pm","6am-6pm","6am-3pm","6am-6pm","6am-3pm","6am-6pm","6am-3pm","6am-6pm","6am-3pm","6am-6pm","6am-3pm","6am-6pm","6am-3pm","6am-12pm","6am-3pm","6am-6pm","6am-12pm, praise day (focus on worship)","6am-3pm","6am-6pm","6am-3pm","6am-6pm","6am-6pm","Break your fast with a thanksgiving meal"];
+function L(s,x,skip){return s.split(";").filter(Boolean).map(function(z){var p=z.split("|");return p[0]==skip?"":'<a class="s" target="_blank" rel="noopener" href="'+q(p[0]+" "+p[1]+" "+x)+'">'+p[0]+' - '+p[1]+'</a>'}).join("")}
+var SV=["Pastor Don Dixon|The Authentic Biblical Salvation Plan|p:8X4zbRWtKJg","Derek Prince|Entrance into God's Kingdom|p:niHUYnieRjk","Deliverance Prayer|Breaking the Power of Idolatry and Altars|p:4-fXnaLWgYU","Joy Museba|Altars, Covenants and Soul Ties|l:yIjwfpR4mlY","Apostle Joshua Selman|Midnight Warfare Against Evil Altars|p:JdWhjmWBntI","Pastor Andrew F Carter|Flee From Sexual Immorality|p:NSJSTAtIf_I","Mike Signorelli|Is Your Porn Struggle Spiritual, Psychological or Demonic?|p:SgAPNnRfecI","Steve Gallagher|Pure Life Ministries Sermon Podcast|s:PLfTkJo2qb1jX65-XQsgDmdkpOVWCEPnDR","Dr. D.K. Olukoya|War Against Evil Dreams|p:X8FvAXr9RcQ","Prophet Gebhardt Berndt|Succubus and Incubus at Night?|p:6csW0qAb0A8","Rev. Terry K. Anderson|You're Under Spiritual Attack|s:PLKsqFIm7nR-T5NeznewL3PUdte0LTlKJx","Bill Johnson|Why You Need to Be Filled With the Holy Spirit|p:8p-ELqOwrMU","Billy Graham|Prayer for Shielding Your Family|p:DXN6dKVArqc","Pastor Rhonda Davis|Calvary's Benefit Package|p:iiLFCsGdIq8","Chimdi Ohahuna|Kings Shall Be Your Nursing Fathers|p:mEwbjHZTCjY","Nicola McFadden|Your Destiny's Helper Shall Seek and Bless You|p:dGSjdLkVV5s","Pastor Esther Benenoch|Divine Restoration for Our Children|p:-ahskX19zd4","Not Overlooked, Preserved|Waiting for a Godly Spouse|p:xQRJUPf4ZoQ","Biblical Wisdom|God Is Bringing Someone Chosen Just for You|p:fN-7L2FHA8U","Amen Podcast|Waiting, Song of Solomon Series|p:w7ec8gtEPf0"];
+var SD=[[13],[0,1],[5,6],[1],[0],[11],[11,0],[11],[10],[11],[4,3,2],[2,3],[10],[10,13],[6,7],[8],[6,5],[8,9,10],[8],[13,16],[12,16],[14,15],[14,13],[14,15],[15,14],[17,18],[18,19],[10,15],[5,6,7],[13,12]];
+function U(a,b){return({p:"https://music.youtube.com/podcast/",l:"https://www.youtube.com/live/",s:"https://music.youtube.com/playlist?list="})[a]+b}
+var PP=["Father, thank You for Your goodness, mercy and protection over me and my family.|Thank You for Your favor that surrounds me like a shield.|Thank You for the blood of Jesus that cleanses and protects.|Thank You for the Holy Spirit who guides and comforts me.|Let my life be a living sacrifice of praise and thanksgiving.","Father, I surrender my life completely to You. Have Your way in me.|Lord, forgive me of every sin, known and unknown. Wash me with the blood of Jesus.|Create in me a clean heart, O God, and renew a right spirit within me.|I renounce every agreement I have made with sin, darkness or the enemy.|I am a new creature in Christ. Old things have passed away (2 Corinthians 5:17).","Father, I confess every sexual sin in thought, word or deed. Forgive me.|I renounce every spirit of lust, perversion and sexual impurity in my life.|Every demonic attachment formed through sexual sin, break off me now in Jesus' name.|My body is the temple of the Holy Spirit and I will not defile it.|Give me grace to flee temptation and walk in purity and self-control (Galatians 5:22-23).","Father, draw me closer to You. I want to know You more.|Lord, remove everything that distracts me from You.|Create in me a hunger and thirst for Your presence.|Let me hear Your voice clearly every day.|Keep me in perfect peace as I trust in You (Isaiah 26:3).","I receive Your forgiveness and refuse condemnation (Romans 8:1).|I forgive everyone who has wronged me and release them to You.|Lord, I release every past failure, sin and pain into Your hands.|Restore to me the joy of Your salvation (Psalm 51:12).|Do a new thing in my life; let it spring forth (Isaiah 43:19).","Father, fill me with the Holy Spirit, not once but continually.|Baptize me with Your Spirit and with fire.|Holy Spirit, take full residence in my heart, mind and body.|Give me a hunger and thirst for more of You.|Holy Spirit, be my Teacher, Comforter, Guide and Helper.","Lord Jesus, I receive the promise of the Father, the gift of the Holy Spirit.|I renounce every fear, unbelief or doubt that blocks the flow of Your Spirit.|Let Your Spirit flow through me in gifts, power and fruit.|I receive power to be Your witness (Acts 1:8).|Holy Spirit, speak to me and lead me into all truth.","Holy Spirit, lead me in every decision today and always.|Help me walk in the Spirit so I do not fulfil the desires of the flesh.|Let me not grieve or quench Your Spirit.|I am led by the Spirit of God and I am a child of God (Romans 8:14).|Give me discernment to know Your voice from every other voice.","You have not given me a spirit of fear but of power, love and a sound mind.|Fill me with boldness to live and speak for You.|I bind every spirit of fear, anxiety and torment in my life.|I am strong and of good courage because You are with me (Joshua 1:9).|Fear has no hold on me in Jesus' name.","Holy Spirit, grow Your fruit in me: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.|Father, give me the gifts of Your Spirit for the building of Your kingdom.|Stir up the gift of God that is in me (2 Timothy 1:6).|Make me fruitful in every season.|Let my character reflect Christ in everything I do.","Every altar raised against my life, my family and my destiny, be destroyed by fire.|Every ancestral altar speaking against me, I silence you with the blood of Jesus.|I pull down every high place, shrine and demonic structure in my life.|Father, raise an altar of worship and righteousness in my life and home.|No weapon formed against me shall prosper (Isaiah 54:17).","I plead the blood of Jesus over my life and my family line.|Every generational curse, inherited sin or covenant, I renounce you in Jesus' name.|I break every soul tie and unholy agreement with darkness.|Let every handwriting against my life be blotted out by the blood of Jesus.|Christ has redeemed me from the curse of the law (Galatians 3:13).","Christ disarmed every power against me at the cross (Colossians 2:15).|I stand in the authority You have given me over all the power of the enemy (Luke 10:19).|Every power assigned to delay or destroy my destiny, be scattered.|I declare that the enemy is defeated and I walk in victory.|Greater is He who is in me than he who is in the world.","I put on the belt of truth and the breastplate of righteousness.|I put on the shoes of the gospel of peace and take up the shield of faith.|I put on the helmet of salvation and take up the sword of the Spirit.|I take every thought captive to the obedience of Christ (2 Corinthians 10:5).|I pray always in the Spirit and stay alert.","Every chain of bondage in my life, break now in Jesus' name.|I break every addiction and unholy habit and I declare I am free.|Every spirit of lust, I command you to leave me now.|Whom the Son sets free is free indeed (John 8:36).|I walk in the liberty with which Christ has set me free (Galatians 5:1).","I cover my night season with the blood of Jesus.|Father, surround my bed with Your angels.|I lie down in peace, for You alone make me dwell in safety (Psalm 4:8).|When I lie down I will not be afraid; my sleep will be sweet (Proverbs 3:24).|I wake refreshed and strong in You.","Lord, cleanse my eyes, my thoughts and my desires.|I set nothing impure before my eyes (Psalm 101:3).|Fill my mind with whatever is true, pure and lovely (Philippians 4:8).|Every impure dream or image, I cancel you by the blood of Jesus.|Lord, give me strength to walk away from every relationship or habit that pulls me into sin.","Every dream of being chased, attacked or pursued, I cancel you now in Jesus' name.|Every dream of sexual defilement, I cancel you by the blood of Jesus.|I command every spirit operating in my dreams to be bound and cast out.|I will not fear the terror of night (Psalm 91:5).|Let every evil dream be turned into nothing and my nights be peaceful.","Father, give me dreams from You: dreams of direction, warning and purpose (Acts 2:17).|Speak to me by Your Spirit in the night seasons.|Give me discernment to know what is from You.|I declare my dream life is sanctified.|Let every dream of defeat be turned into a dream of victory.","Father, I ask for divine health in spirit, soul and body.|Lord, heal every sickness, disease and pain in my body.|By the stripes of Jesus I am healed (Isaiah 53:5).|Give me wisdom to care for my body, Your temple.|Let Your healing power flow through me now.","Father, I cover my family with the blood of Jesus.|Protect my family from every danger, accident, sickness and evil plan.|Surround our household with Your angels (Psalm 91:11).|Let Your peace reign in our home.|As for me and my house, we will serve the Lord (Joshua 24:15).","Father, I ask You for a good job that provides abundantly and honors You.|Connect me to opportunities that are meant for me.|Every door of employment shut by the enemy, open now.|I break every curse of unemployment and failure in my life.|Establish the work of my hands (Psalm 90:17).","Let Your favor surround me like a shield (Psalm 5:12).|Give me favor with employers, interviewers and decision-makers.|Let my skills and gifts make room for me (Proverbs 18:16).|Every door You open for me, let no one shut it.|Make me excellent and trustworthy in all I do.","Father, send destiny helpers into my life, people who will lift and support me.|Connect me with mentors and people of influence who will favor me.|I break every relationship that delays my destiny.|Give me discernment to recognize my destiny helpers.|Let me be a blessing to others as You bless me.","Father, connect me to the right people at the right time.|I declare divine appointments and unexpected favor in my life.|Send me my Barnabas, and keep wrong connections far from me.|Every enemy of my destiny, be scattered.|Let Your favor go before me and prepare the way.","Father, I trust Your timing for marriage.|Prepare me to be a godly spouse.|Remove every wrong person and relationship from my life.|Every delay or hindrance to my marriage, I cancel it now.|Prepare the heart of the one You have chosen for me.","Father, give me a godly, loving and compatible spouse who loves You.|I break every covenant, curse or spirit that hinders my marital destiny.|Close every wrong door and open the right one.|Let my marriage be a testimony of Your love and faithfulness.|Protect my future marriage from strife, infidelity and divorce.","Father, reveal the purpose You created me for.|Order my steps and direct my path.|Every distraction from my destiny, be removed.|I break every plan of the enemy to abort my destiny.|Perfect all that concerns me (Psalm 138:8).","Father, purify my heart and make me holy as You are holy.|Sin shall not have dominion over me; I am under grace (Romans 6:14).|I flee youthful lusts and pursue righteousness, faith, love and peace.|Make me a vessel of honor, sanctified and useful for Your kingdom.|I declare I will pursue holiness and walk in purity all my days.","Father, thank You for these 30 days of prayer, fasting and breakthrough.|Thank You for every chain broken, every altar destroyed and every dream restored.|I dedicate my life afresh to You. Use me for Your glory.|Let every breakthrough received be permanent.|To God be the glory, honor and praise forever. Amen."];
+var PE=["🕊️","🔥","⛓️‍💥","🌙","🌿","💼","🤝","💍","🌸"];
+var PC=["linear-gradient(135deg,#fde4ea,#fbe9d5)","linear-gradient(135deg,#fde9c9,#fbd5e0)","linear-gradient(135deg,#e8d9f7,#fbd5e6)","linear-gradient(135deg,#dfe3fb,#f3d9f0)","linear-gradient(135deg,#d9f1e3,#fde4ea)","linear-gradient(135deg,#fdeccf,#f7dbe6)","linear-gradient(135deg,#e5def8,#fde1d8)","linear-gradient(135deg,#fcd9e4,#f5e1f7)","linear-gradient(135deg,#fde4ea,#e3f0d9)"];
+var PT=["Begin by giving thanks and clearing your heart. A grateful, repentant heart draws God near (Psalm 100, Psalm 51).","The Holy Spirit is your Helper and Comforter. Ask, wait and receive power to live a victorious life (Luke 11:13).","Christ has already won the victory. Stand in your authority and walk free from every chain (Colossians 2:15).","God gives sleep to those He loves. Guard what you watch and hear, and pray over your nights (Psalm 127:2).","Your health and your household are precious to God. Ask for His healing and His hedge of protection (Psalm 121).","God is the giver of work and provision. Pray with faith, and work with excellence (Deuteronomy 8:18).","Joseph, Ruth and Esther each met helpers at the right time. Ask God to connect you to yours (Ruth 2).","Wait on God's perfect timing. Prepare your heart and trust Him to bring the right person (Proverbs 18:22).","Walk in your purpose, stay pure and seal everything with thanksgiving (Jeremiah 29:11)."];
+function PI(i){for(var k=0;k<phases.length;k++)if(i>=phases[k][0]&&i<=phases[k][1])return k;return 0}
+var S={cur:0,d:{},n:{},pp:{}};
+function load(){try{var x=localStorage.getItem("pf30");if(x)S=JSON.parse(x)}catch(e){}}
+function save(){try{localStorage.setItem("pf30",JSON.stringify(S))}catch(e){}}
+function q(s){return"https://www.youtube.com/results?search_query="+encodeURIComponent(s)}
+function ph(i){for(var k=0;k<phases.length;k++)if(i>=phases[k][0]&&i<=phases[k][1])return phases[k][2];return""}
+function dn(i){var o=S.d[i]||{};return o.r&&o.p&&o.f}
+function render(){
+ var g=document.getElementById("grid"),h="",c=0;
+ for(var i=0;i<30;i++){var d=dn(i);if(d)c++;h+='<button class="chip'+(d?" done":"")+(i==S.cur?" sel":"")+'" data-i="'+i+'">'+(i+1)+'</button>'}
+ g.innerHTML=h;
+ document.getElementById("pb").style.width=(c/30*100)+"%";
+ document.getElementById("pt").textContent=c+" of 30 days completed";
+ var st=0;for(var j=S.cur;j>=0&&dn(j);j--)st++;
+ document.getElementById("st").textContent=c?"Keep going!":"Start today";
+ var i2=S.cur,e=D[i2],o=S.d[i2]||{};
+ document.getElementById("day").innerHTML=
+ '<div class="pb" style="background:'+PC[PI(i2)]+'"><span class="ic">'+PE[PI(i2)]+'</span><div><p class="phase">'+ph(i2)+'</p><small>'+PT[PI(i2)]+'</small></div></div><h2>Day '+(i2+1)+': '+e[0]+'</h2>'+
+ '<div class="ref"><b>Read:</b> '+e[1]+'</div>'+
+ '<p class="pr">'+e[2]+'</p>'+
+ (function(){S.pp=S.pp||{};var a=S.pp[i2]||[],pts=PP[i2].split("|"),h='<p><b>Prayer points</b> <small>('+a.filter(Boolean).length+' of '+pts.length+' prayed)</small></p>';pts.forEach(function(t,j){h+='<label class="t"><input type="checkbox" data-pp="'+j+'"'+(a[j]?' checked':'')+'> '+t+'</label>'});return h})()+
+ '<p><b>Worship (opens YouTube search):</b><br>'+
+ '<a class="s" target="_blank" rel="noopener" href="'+q(ES[i2][0]+" "+ES[i2][1]+" official video")+'">English: '+ES[i2][0]+' - '+ES[i2][1]+'</a>'+
+ L(EN2[i2],"official video",ES[i2][0])+'</p><p><b>Shona worship:</b><br>'+L(SN[i2],"gospel","")+'</p>'+
+ '<p><b>Sermons:</b><br>'+SD[i2].map(function(k){var v=SV[k].split("|"),t=v[2].split(":");return'<a class="s" target="_blank" rel="noopener" href="'+U(t[0],t[1])+'">'+v[0]+': '+v[1]+'</a>'}).join("")+'<a class="s" target="_blank" rel="noopener" href="'+q(SM[i2])+'">More on this topic (search)</a></p>'+
+ '<label class="t"><input type="checkbox" data-k="r"'+(o.r?" checked":"")+'> I read the passages</label>'+
+ '<label class="t"><input type="checkbox" data-k="p"'+(o.p?" checked":"")+'> I prayed and worshipped</label>'+
+ '<label class="t"><input type="checkbox" data-k="f"'+(o.f?" checked":"")+'> I fasted (or did my chosen fast)</label>'+
+ '<p><b>My notes, dreams and what God said:</b></p><textarea id="nt" placeholder="Write here...">'+(S.n[i2]||"")+'</textarea>'+
+ '<div class="nav"><button class="b g" id="pv">Previous</button><button class="b" id="nx">Next day</button></div>';
+}
+document.addEventListener("click",function(e){
+ var t=e.target;
+ if(t.classList.contains("chip")){S.cur=+t.dataset.i;save();render();window.scrollTo(0,0)}
+ else if(t.id=="pv"&&S.cur>0){S.cur--;save();render()}
+ else if(t.id=="nx"&&S.cur<29){S.cur++;save();render();window.scrollTo(0,0)}
+ else if(t.id=="reset"){if(t.dataset.arm){S={cur:0,d:{},n:{},pp:{}};save();render();t.dataset.arm="";t.textContent="Reset progress"}else{t.dataset.arm="1";t.textContent="Tap again to erase all progress and notes";setTimeout(function(){t.dataset.arm="";t.textContent="Reset progress"},4000)}}
+ else if(t.id=="theme"){var r=document.documentElement;var dark=r.getAttribute("data-theme")?r.getAttribute("data-theme")=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.setAttribute("data-theme",dark?"light":"dark")}
+});
+document.addEventListener("change",function(e){
+ var t=e.target;if(t.dataset&&t.dataset.k){var o=S.d[S.cur]||(S.d[S.cur]={});o[t.dataset.k]=t.checked;save();render()}else if(t.dataset&&t.dataset.pp!==undefined){S.pp=S.pp||{};var a=S.pp[S.cur]||(S.pp[S.cur]=[]);a[+t.dataset.pp]=t.checked;save();render()}
+});
+document.addEventListener("input",function(e){if(e.target.id=="nt"){S.n[S.cur]=e.target.value;save()}});
+load();render();
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
+</body>
+</html>
